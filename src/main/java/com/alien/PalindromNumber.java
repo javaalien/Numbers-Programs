@@ -1,6 +1,6 @@
 package com.alien;
 
-// Write a Java Program to find whether a string or number is palindrome or not.
+// Write a Java Program to find whether number is palindrome or not.
 
 public class PalindromNumber {
 
