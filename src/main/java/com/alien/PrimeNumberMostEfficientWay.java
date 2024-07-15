@@ -6,7 +6,7 @@ public class PrimeNumberMostEfficientWay {
 
 	public static void main(String[] args) {
 
-		int num = 23;
+		int num = 25;
 
 		boolean prime = isPrime(num);
 
@@ -23,7 +23,7 @@ public class PrimeNumberMostEfficientWay {
 		if (num % 2 == 0 || num % 3 == 0)
 			return false;
 
-		for (int i = 5; i * i < num; i += 6) {
+		for (int i = 5; i < num / 2; i += 6) {
 			if (num % i == 0 || num % (i + 2) == 0)
 				return false;
 		}

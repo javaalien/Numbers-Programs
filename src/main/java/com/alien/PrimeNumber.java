@@ -5,7 +5,7 @@ package com.alien;
 public class PrimeNumber {
 
 	public static void main(String[] args) {
-		int num = 23;
+		int num = 17;
 		boolean result = isPrime(num);
 		System.out.println(result);
 	}
@@ -18,7 +18,7 @@ public class PrimeNumber {
 			return true;
 		}
 
-		for (int i = 2; i <= num / 2; i++) {
+		for (int i = 2; i * i <= num; i++) {
 			if (num % i == 0)
 				return false;
 		}
